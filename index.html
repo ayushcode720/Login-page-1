@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <title>Practice.com</title>
+
+        <style>
+
+            *{
+                margin: 0;
+                padding: 0;
+                
+            }
+
+            body{
+                background-image: url(download.jpeg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .input-box{
+                display: flex;
+                flex-direction: column;
+                height: 210px;
+                width: 300px;
+                gap: 20px;
+                background: rgba(255, 255, 255, 0.3);
+                backdrop-filter: blur(10px);
+                border: none;
+                border-radius: 5px;
+                box-shadow: 1px 1px 15px black;
+            }
+
+            .name-box,.pass-box,.login-button{
+                height: 30px;
+                margin-left: 8.5px;
+                background: rgba(255, 255, 255, 0.3);
+                backdrop-filter: blur(10px);
+                border: none;
+                border-radius: 5px;
+            }
+
+            .name-box{
+                margin-top: 8px;
+            }
+
+            .name-box,.pass-box{
+                width: 272px;
+                padding-left: 10px;
+            }
+
+            .name-box:focus,.pass-box:focus{
+                outline: none;
+            }
+
+            .login-button{
+                width: 283px;
+                height: 33px;
+                background-color: rgb(4, 126, 202);
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 13px;
+                color: white;
+                cursor: pointer;
+            }
+
+            .login-button:active{
+                background-color: rgb(4, 135, 217);
+            }
+
+            .whole-box{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                flex-direction: column;
+            }
+
+            .circle{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            .facebook,.guest,.git{
+                cursor: pointer;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <div class="whole-box">
+         <div class="input-box">
+            <input class="name-box" type="text" placeholder="Gmail">
+            <input class="pass-box" type="password" placeholder="password">
+            <button class="login-button">Login</button>
+
+            <div class="circle">
+            <p class="git">GitHub</p>
+            <p class="guest">Guest</p>
+            <p class="facebook">Facebook</p>
+         </div>
+         </div>
+         
+
+        </div>
+    </body>
+</html>
